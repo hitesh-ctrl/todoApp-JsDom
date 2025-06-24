@@ -42,7 +42,7 @@ const render=()=>{
                 saveBtn.innerText="Save"
                 saveBtn.onclick=()=>{
                     let updatedtxt=editInp.value.trim();
-                    if(updatedtxt != ""){
+                    if(updatedtxt !== ""){
                         todos[i]=updatedtxt;
                     
                     }
