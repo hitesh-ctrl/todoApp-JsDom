@@ -5,7 +5,7 @@ document.querySelector("body").append(div)
 const add=()=>{
     
     let inp=document.querySelector("input").value.trim()
-    if (inp !== "") { 
+    if (inp !== "") { // Only add if not empty
         todos.push(inp);
         render();
     }
@@ -46,6 +46,8 @@ const render=()=>{
                         todos[i]=updatedtxt;
                     
                     }
+                    else
+                        todos.splice(i,1)
                     render()
                 }
                 
